@@ -1,0 +1,81 @@
+﻿@model Persona
+
+@{
+    ViewData["Title"] = "Home Page";
+    DateTime hoy = DateTime.Now;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Soy @Model.Nombre</h1>
+    <h2>Soy un desarrollador fullstack tengo (@Model.Edad) años, me especializo en .NET y javascript, hablo inglés y japones y hago calistenia</h2>
+    <h4>@hoy.ToString("dd/MM/yyyy hh:mm:ss tt")</h4>
+
+    <img src="/Images/gray.jpg" alt="FOTO NO DISPONIBLE" id="foto" />
+
+</div>
+<div class="text-center">
+    <img id="ImgDotNet" src="/Images/csharplogo.png" alt="DotNet image" />
+</div>
+
+<div class="row justify-content-center text-center bg-primary">
+    <div class="col col-md-7 seccion-bienvenida">
+        <h1>hola, te doy la bienvenida a mi portofalolio</h1>
+        <p>
+            he estado aprendiendo a desarrollar software, por el momento este es mi primer proyecto de asp.net con arquitectura MVC
+            anteriormente estaba aprendiendo la arquitectura MVVM para desarrollar aplicaciones en WPF, haciendo un CRUD basico y aprendiendo a usar entity
+            framework con sqlserver
+        </p>
+    </div>
+
+</div>
+
+<div style="margin-top: -105px">
+    <div class="row justify-content-md-center text-center">
+        <div class="col col-3 bg-white habilidades" style="border-radius: 15px 0 0 15px; box-shadow: 0 5px 5px 0">
+            <h3>backend</h3>
+            <p>trabajo desde el desarrollo, pruebas automaticas y puesta en produccion con entrega continua</p>
+            <p class="text-primary cabecera">
+                stack:
+            </p>
+            <p>
+                ASP.NET core, sqlserver
+            </p>
+            <p class="text-primary cabecera">
+                experiencia
+            </p>
+            <ul>
+                <li>WEB api</li>
+                <li>entity framework core</li>
+                <li>blazor</li>
+                <li>dapper</li>
+                <li>queries especiales</li>
+                <li>principios SOLID</li>
+            </ul>
+        </div>
+        <div class="col col-3 bg-white habilidades" style="border-radius: 0 15px 15px 0; box-shadow: 0 5px 5px 0">
+            <h3>fornt-end</h3>
+            <p>
+                puedo crear front-ends robustos los cuales cumplen el requerimiento del negocio
+            </p>
+            <p class="text-primary cabecera">
+                stack:
+            </p>
+            <p>
+                react, angular y bleazor
+            </p>
+            <p class="text-primary cabecera">
+                experiencia
+            </p>
+            <ul>
+                <li>react hooks</li>
+                <li>angular material</li>
+                <li>blazor WASM</li>
+                <li>Jquery</li>
+                <li>pruebas automaticas</li>
+                <li>leaflet</li>
+                <li>MarkDown</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
